@@ -3,6 +3,14 @@ package datastructures;
 
 
 public class Stack {
-    int n=5;
-    int s[]=new int[n];
+    int capacity=5;
+    int s[]=new int[capacity];
+    int top=0;
+    
+    private boolean isEmpty(){
+        if(top==0)
+            return true;
+        else
+            return false;
+    }
 }
