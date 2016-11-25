@@ -10,14 +10,10 @@ public class AddTwoNumber {
         int maxLexn = maxLen(xlen, ylen);
         int formatedX []=formatArray(X,xlen,maxLexn);
         int formatedY []=formatArray(Y,ylen,maxLexn);
-        System.out.println("formatedX :"+formatedX[0]+formatedX[1]+formatedX[2]);
-         System.out.println("formatedY :"+formatedY[0]+formatedY[1]+formatedY[2]);
         int S[] = new int[maxLexn + 1];
-
         for (int i = maxLexn; i > 0; i--) {
             int sum = formatedX[maxLexn - 1] + formatedY[maxLexn - 1];
              write = (sum % 10) + carry;
-            // sum = sum + carry;
             if ((sum+carry) > 10) {
                 carry = 1;
             } else {
